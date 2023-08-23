@@ -1,0 +1,6 @@
+<div style="text-align: center;">
+    <img *ngIf="randomBlog !== undefined" style="width: 52vw;"
+        src="https://source.unsplash.com/960x600/?{{randomBlog.title}}" alt="">
+    <h1 *ngIf="randomBlog !== undefined">{{randomBlog.title}}</h1>
+    <h3 *ngIf="randomBlog !== undefined">{{randomBlog.subtitle}}</h3>
+</div>
