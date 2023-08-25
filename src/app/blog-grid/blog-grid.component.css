@@ -1,0 +1,16 @@
+.card {
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+.grid-container {
+    width: 46vw;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 40px;
+    display: block;
+    overflow: auto;
+}

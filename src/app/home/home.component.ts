@@ -11,7 +11,8 @@ import { Tag } from '../model/tag.model';
 export class HomeComponent implements OnInit {
 
   randomBlog!: Blog;
-  curPage!: Blog[];
+  curPage: Blog[] = [];
+  nextPage: Blog[] = [];
   pageSize: number = 10;
   pageNumber: number = 1;
   tags!: Tag[];
@@ -27,19 +28,36 @@ export class HomeComponent implements OnInit {
   }
 
   getPage() {
-    this.apiService.getPagedBlog(this.randomBlog.blogid, 10, 1).subscribe((data: Blog[]) => {
+    this.apiService.getPagedBlog(this.randomBlog.blogid, this.pageSize, this.pageNumber).subscribe((data: Blog[]) => {
       this.curPage = data
+    })
+
+    this.apiService.getPagedBlog(this.randomBlog.blogid, this.pageSize, this.pageNumber + 1).subscribe((data: Blog[]) => {
+      this.nextPage = data
+
+    })
+
+  }
+
+  goToNextPage() {
+    this.pageNumber++
+    this.curPage = this.nextPage
+    this.nextPage = []
+
+    this.apiService.getPagedBlog(this.randomBlog.blogid, this.pageSize, this.pageNumber + 1).subscribe((data: Blog[]) => {
+      this.nextPage = data
+
     })
   }
 
-  nextPage() {
-    this.pageNumber++
-    this.getPage()
-  }
-
-  prevPage() {
+  goToPrevPage() {
     this.pageNumber--
-    this.getPage()
+    this.nextPage = this.curPage
+    this.curPage = []
+
+    this.apiService.getPagedBlog(this.randomBlog.blogid, this.pageSize, this.pageNumber).subscribe((data: Blog[]) => {
+      this.curPage = data
+    })
   }
 
 

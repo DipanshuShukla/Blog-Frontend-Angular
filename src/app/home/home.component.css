@@ -1,0 +1,14 @@
+button {
+    width: 50px;
+    height: 1.8em;
+    margin: auto;
+}
+
+.button-group {
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    display: flex;
+    text-align: center;
+    height: min-content;
+}

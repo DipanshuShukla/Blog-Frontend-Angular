@@ -1,5 +1,12 @@
-<br>
 <app-mini-blog [randomBlog]="randomBlog"></app-mini-blog>
-<hr style="width: 46vw; border: 1px solid black;">
-<h1 style="text-align: center; margin-top: 40px;">All articles</h1>
+<hr style="width: 46vw; border: 1px solid black;margin-top: 4vh;">
+
+<h1 style="text-align: center; margin-top: 5vh;">All articles</h1>
 <app-blog-grid [blogs]="curPage"></app-blog-grid>
+
+
+<div class="button-group">
+    <button style="margin-right: 20px;" (click)="goToPrevPage()" [disabled]="pageNumber<=1">-</button>
+    <p style="font-size: 1.8em; display: inline;margin: 0;">{{pageNumber}}</p>
+    <button style="margin-left: 20px;" (click)="goToNextPage()" [disabled]="nextPage.length==0">+</button>
+</div>
