@@ -1,18 +1,34 @@
-# BlogFrontendAngular
+# Nordic Rose Blog Frontend
 
-This is the frontend of a blog website built according to the Figma template [here](https://www.figma.com/file/mKgFeKSmc10YarS9f0XNZG/A-blog-template-(Community))
+This is the frontend of a blog website built according to the Figma template [here](https://www.figma.com/file/mKgFeKSmc10YarS9f0XNZG/A-blog-template-(Community)).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+**Note**: This frontend project is part of a larger blog website project. The backend of the blog is available in the [Nordic Rose Blog Backend](https://github.com/DipanshuShukla/Blog-Backend-Springboot) repository.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Environment Configuration
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This project uses environment files to configure settings for both the development and production environments. To configure the environment accordingly, you need to understand the global variables used in these files.
 
-## Build
+### Development Environment
+
+In the development environment, you can configure the settings by understanding the following global variables used in `environment.development.ts`:
+
+- `HOSTNAME`: The hostname or IP address of the backend server.
+- `PORT_NUMBER`: The port number on which the backend server is running.
+- `URL`: The base URL for API endpoints, constructed using `HOSTNAME` and `PORT_NUMBER`.
+
+### Production Environment
+
+In the production environment, you can configure the settings by understanding the following global variables used in `environment.ts`:
+
+- `URL`: The base URL for API endpoints in the production environment.
+
+Please edit the appropriate environment file (`environment.development.ts` for development and `environment.ts` for production) to set the global variables according to your deployment requirements.
+
+## Building
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
@@ -26,4 +42,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To get more information on using Angular CLI or for additional assistance, please refer to the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
