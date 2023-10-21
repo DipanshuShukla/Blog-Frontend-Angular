@@ -1,0 +1,29 @@
+<div class="top-hat"></div>
+<div *ngIf="response === undefined" class="box">
+    <h1>Sign up for the newsletter</h1>
+    <p>If you want relevant updates occasionally, sign up for the private newsletter. Your email is never shared.</p>
+    <div class="textbox">
+        <input type="text" name="email" id="email" #email placeholder="Enter your email..."
+            (keyup)="emailid=email.value">
+        <div class="button" (click)="subscribe()">
+            <p class="button-text">SIGN UP</p>
+        </div>
+
+    </div>
+    <div *ngIf="emailValidationError !== ''" class="error-msg">
+        ⓘ {{emailValidationError}}
+    </div>
+</div>
+
+<div *ngIf="response !== undefined && emailid === response.email" class="box submitted">
+    <div style="height: 15%;"></div>
+    <h1>Thank you!</h1>
+    <p>Your submission has been recorded.</p>
+
+</div>
+
+<div *ngIf="response !== undefined && response.email === null" class="box submitted">
+    <div style="height: 15%;"></div>
+    <h1>You are already signed up!</h1>
+    <p>Thank you for showing your interest.</p>
+</div>

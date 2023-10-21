@@ -1,0 +1,162 @@
+h3 {
+    font-size: 2rem;
+    text-decoration: none;
+
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+#author-top {
+    display: flex;
+    margin: auto;
+    margin-top: 3vh;
+    max-width: 900px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.article-content {
+    margin: 80px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 900px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+figure {
+    align-items: center;
+}
+
+figcaption {
+    margin: 5px auto;
+    width: 60%;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+#author-bottom {
+    display: flex;
+    margin: auto;
+    margin-top: 3vh;
+    max-width: 900px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.profile-pic {
+    margin-right: 2%;
+    height: 8vh;
+    width: 8vh;
+    border-radius: 100%;
+}
+
+.author-info {
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.author-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.date-read {
+    font-size: 1.4rem;
+}
+
+.socials {
+    margin-left: auto;
+    display: flex;
+}
+
+.social-button {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-right: 0;
+    width: 100px;
+    height: 66%;
+    border: 2px solid lightgray;
+}
+
+.button-left {
+    border-radius: 10% 0% 0% 10%;
+    border-right: 1px solid lightgray;
+}
+
+.button-right {
+    border-radius: 0 10% 10% 0;
+    border-left: 1px solid lightgray;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.author-about {
+    color: rgb(65, 61, 61);
+    font-size: 1.3rem;
+}
+
+.goofy-eye-hr-container {
+    align-items: center;
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.goofy-eye-hr {
+    position: absolute;
+    width: 100vw;
+    border: 1px solid
+}
+
+.goofy-eye {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tags {
+    margin: auto;
+    margin-top: 30px;
+    max-width: 900px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.tag {
+    display: inline;
+}
+
+.tag-name {
+
+    display: inline;
+    text-decoration: underline;
+}
+
+.nav-button {
+    width: 50px;
+    height: 1.8em;
+    margin: auto;
+}
+
+.nav-button-group {
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    display: flex;
+    text-align: center;
+    height: min-content;
+}

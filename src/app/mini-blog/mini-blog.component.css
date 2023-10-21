@@ -1,0 +1,18 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.image-container {
+    align-items: center;
+    display: flex;
+    position: relative;
+    height: min(625px, 66vw);
+    width: min(100%, 1000px);
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+
+}

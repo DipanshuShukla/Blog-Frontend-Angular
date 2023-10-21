@@ -1,5 +1,5 @@
 <footer>
-    <div class="footer" style="color: white;">
+    <div class="footer">
         <div style="display: flex; width: 100vw; transform: translateX(-25%);">
             <div style="display: flex;" *ngFor="let a of [1,2]">
                 <div style="margin: 10px;" *ngFor="let tag of tags; let i = index"
@@ -8,8 +8,8 @@
                 </div>
             </div>
         </div>
-        <div style="width: 40vw;margin-left: auto; margin-right: auto; text-align: center; margin-top: 100px;">
-            <svg width="20vw" height="10vh" viewBox="0 0 292 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="footer-content">
+            <svg viewBox="0 0 292 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M1.18565 23H11.5537V22.456L8.22565 22.04C7.26565 21.912 6.56165 21.176 6.56165 20.184V4.856L19.7457 23H21.1857V3.352C21.1857 2.39199 21.8577 1.592 22.8177 1.46399L25.2497 1.144V0.599995H14.8817V1.144L18.2097 1.56C19.1697 1.688 19.8737 2.424 19.8737 3.41599V17.688L10.3057 4.248C7.64966 0.535995 5.02565 0.599995 0.545654 0.599995V1.144C2.49765 1.432 4.41765 2.168 5.24965 3.64V20.248C5.24965 21.208 4.57765 22.008 3.61765 22.136L1.18565 22.456V23Z"
                     fill="white" />
@@ -42,10 +42,11 @@
                     fill="white" />
             </svg>
 
-            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nisi debitis, officia laudantium
+            <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nisi debitis, officia
+                laudantium
                 ipsum
                 laborum. Commodi totam aut consectetur? Aspernatur quos nam quod. Vel deleniti debitis iste, eos quia
-                similique!</h3>
+                similique!</p>
 
             <div class="links">
                 <a href="">Twiter</a>
@@ -53,8 +54,8 @@
                 <a href="">RSS</a>
             </div>
 
-            <h4>@ 2012-2020 Nordic Rose Co. <br>
-                All rights reserved</h4>
+            <p class="copyright-info">© 2012-2020 Nordic Rose Co. <br>
+                All rights reserved</p>
         </div>
     </div>
 </footer>

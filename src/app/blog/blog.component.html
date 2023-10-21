@@ -1,1 +1,150 @@
-<p>blog works!</p>
+<div style="min-height: 50vh;text-align: center;">
+    <div *ngIf="blog!==undefined">
+
+        <div style="max-width: 1080px;margin: auto;">
+            <h1>{{blog.title}}</h1>
+            <h3>{{blog.subtitle}}</h3>
+        </div>
+        <img style="width: 100vw;margin-bottom: 2vh;margin-top: 5vh;margin-left: 0;"
+            src="https://source.unsplash.com/960x600/?{{blog.title}}" alt="">
+        <hr style="max-width: min(900px, calc(100% - 100px) );border: 1px solid black;">
+
+        <div id="author-top">
+            <img class="profile-pic" src="https://xsgames.co/randomusers/avatar.php?g={{authorGender}}" alt="">
+            <div class="author-info">
+                <div class="author-name">{{blog.author.name}}</div>
+                <div class="date-read">Apr 15, 2020 · 4 min read</div>
+            </div>
+            <div class="socials">
+                <div class="social-button button-left">
+                    <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                        fill="none">
+                        <path
+                            d="M10.0001 0.041626C4.47724 0.041626 0 4.51886 0 10.0417C0 14.995 3.60522 19.0972 8.33225 19.8916V12.128H5.91994V9.33417H8.33225V7.27413C8.33225 4.88389 9.79213 3.58135 11.9247 3.58135C12.9461 3.58135 13.8238 3.65746 14.0786 3.69098V6.18942L12.5995 6.19013C11.44 6.19013 11.2165 6.74102 11.2165 7.54969V9.33274H13.9832L13.6223 12.1265H11.2165V19.9584C16.1642 19.3562 20 15.1495 20 10.0388C20 4.51886 15.5228 0.041626 10.0001 0.041626Z"
+                            fill="#010002" />
+
+                    </svg>
+                </div>
+                <div class="social-button button-right">
+                    <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16"
+                        fill="none">
+                        <path
+                            d="M19.6169 0.00896646C18.763 0.611275 17.8176 1.07195 16.8171 1.37324C16.28 0.755757 15.5663 0.318104 14.7725 0.119469C13.9786 -0.0791667 13.1429 -0.0292013 12.3784 0.262607C11.6138 0.554416 10.9573 1.07399 10.4977 1.75105C10.0381 2.42812 9.7975 3.23001 9.80847 4.04827V4.93995C8.24146 4.98058 6.68873 4.63305 5.28855 3.92829C3.88838 3.22354 2.68424 2.18345 1.78336 0.900645C1.78336 0.900645 -1.78336 8.92575 6.24175 12.4925C4.40536 13.739 2.21775 14.364 0 14.2758C8.02511 18.7342 17.8336 14.2758 17.8336 4.02152C17.8328 3.77315 17.8089 3.52539 17.7622 3.28143C18.6723 2.38395 19.3145 1.25082 19.6169 0.00896646Z"
+                            fill="black" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu velit tempus erat egestas efficitur. In hac
+            habitasse
+            platea dictumst. Fusce a nunc eget ligula suscipit finibus. Aenean pharetra quis lacus at viverra.
+            <br><br>
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis
+            posuere ligula.
+            In eu dui molestie, molestie lectus eu, semper lectus.
+            <br><br>
+            <h2>
+                Next on the pipeline
+            </h2>
+            Duis eu velit tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce a nunc eget ligula
+            suscipit
+            finibus. Aenean pharetra quis lacus at viverra. Class aptent taciti sociosqu ad litora torquent per conubia
+            nostra, per
+            inceptos himenaeos.
+            <br><br>
+            Morbi efficitur auctor metus, id mollis lorem pellentesque id. Nullam posuere maximus dui et fringilla.
+            <br><br>
+            <figure>
+                <img src="https://source.unsplash.com/854x570/?art,statue,greek" style="width:100%">
+                <figcaption>Image caption centered this way and I'll make this a bit longer to indicate the amount of
+                    line-height.</figcaption>
+            </figure>
+            <br>
+            Aenean pharetra quis lacus at viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            per inceptos
+            himenaeos. Aliquam quis posuere ligula.
+            <br><br>
+            In eu dui molestie, molestie lectus eu, semper lectus. Proin at justo lacinia, auctor nisl et, consequat
+            ante. Donec sit
+            amet nisi arcu. Morbi efficitur auctor metus, id mollis lorem pellentesque id. Nullam posuere maximus dui et
+            fringilla.
+            Nulla non volutpat leo.
+            <br><br>
+            A list looks like this:
+            <br>
+            <ul>
+                <li>
+                    First item in the list
+                </li>
+                <br>
+                <li>
+                    Second item in the list lorem ipsum dolor pellentesque id molestie lectus eu, semper lectus sit amet
+                    nunc felis
+                    dolor lorem ipsum sit amet
+                </li>
+                <br>
+                <li>
+                    Third item in the list
+                </li>
+            </ul>
+            <br>
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis
+            posuere ligula.
+            <br><br>
+            Thanks for reading.
+            <br>
+            Mika
+        </div>
+
+        <div class="tags">
+            Tags:<div class="tag" *ngFor="let tag of blog.tags; let i = index">
+                <div class="tag-name">{{tag.tagname}}</div>{{i+1 < blog.tags.length ? ", " :" "}}</div>
+        </div>
+        
+
+            <hr style=" max-width: min(900px, calc(100% - 100px) );border: 1px dotted black; margin-top: 30px;">
+
+                    <div id="author-bottom">
+                        <img style="height: 6vw; width: auto;" class="profile-pic"
+                            src="https://xsgames.co/randomusers/avatar.php?g={{authorGender}}" alt="">
+                        <div class="author-info">
+                            <div class="author-name">
+                                {{blog.author.name}}
+                            </div>
+                            <div class="author-about">{{blog.author.about}}</div>
+                        </div>
+                    </div>
+
+                    <div class="goofy-eye-hr-container">
+                        <hr class="goofy-eye-hr">
+                        <svg class="goofy-eye" style="position: absolute;" xmlns="http://www.w3.org/2000/svg" width="82"
+                            height="65" viewBox="0 0 82 65" fill="none">
+                            <path
+                                d="M43.2857 32.8572C43.2857 41.3545 40.8575 49.0049 36.9827 54.5046C33.106 60.007 27.8445 63.2857 22.1429 63.2857C16.4412 63.2857 11.1797 60.007 7.30297 54.5046C3.4282 49.0049 1 41.3545 1 32.8572C1 24.3598 3.4282 16.7094 7.30297 11.2098C11.1797 5.70734 16.4412 2.42859 22.1429 2.42859C27.8445 2.42859 33.106 5.70734 36.9827 11.2098C40.8575 16.7094 43.2857 24.3598 43.2857 32.8572Z"
+                                fill="white" stroke="black" stroke-width="2" />
+                            <path
+                                d="M81 31.4286C81 39.9259 78.5718 47.5763 74.697 53.076C70.8203 58.5784 65.5588 61.8571 59.8572 61.8571C54.1555 61.8571 48.894 58.5784 45.0173 53.076C41.1425 47.5763 38.7143 39.9259 38.7143 31.4286C38.7143 22.9312 41.1425 15.2808 45.0173 9.78117C48.894 4.27875 54.1555 1 59.8572 1C65.5588 1 70.8203 4.27875 74.697 9.78117C78.5718 15.2808 81 22.9312 81 31.4286Z"
+                                fill="white" stroke="black" stroke-width="2" />
+                            <ellipse cx="25.5714" cy="45.1429" rx="8.57143" ry="12.1429" fill="black" />
+                            <ellipse cx="63.2857" cy="45.1429" rx="8.57143" ry="12.1429" fill="black" />
+                        </svg>
+                    </div>
+
+                    <div class="grid">
+                        <h1>What to read next</h1>
+                        <app-blog-grid [blogs]="curPage" [cols]="3" [rows]="2"></app-blog-grid>
+                        <div class="nav-button-group">
+                            <button class="nav-button" style="margin-right: 20px;" (click)="goToPrevPage()"
+                                [disabled]="pageNumber<=1">-</button>
+                            <p style="font-size: 1.8em; display: inline;margin: 0;">{{pageNumber}}</p>
+                            <button class="nav-button" style="margin-left: 20px;" (click)="goToNextPage()"
+                                [disabled]="nextPage.length==0">+</button>
+                        </div>
+                    </div>
+
+                    <app-subscribe-newsletter></app-subscribe-newsletter>
+
+            </div>
+        </div>

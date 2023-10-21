@@ -1,8 +1,16 @@
 <div class="grid-container">
 
     <div class="card" *ngFor="let blog of blogs">
-        <img style="width: 90%;" src="https://source.unsplash.com/960x600/?{{blog.title}}" alt="">
-        <h2 style="height: 2rem; font-size: 1rem;">{{blog.title}}</h2>
+        <a routerLink="/blog/{{blog.blogid}}">
+            <div>
+                <div class="image-container">
+                    <img class="image" src="assets/loading.gif" alt="">
+                    <img class="image" style="z-index: 2;" src="https://source.unsplash.com/960x600/?{{blog.title}}"
+                        alt="">
+                </div>
+                <h2 style="height: 2rem; font-size: 1rem;">{{blog.title}}</h2>
+            </div>
+        </a>
     </div>
 
 

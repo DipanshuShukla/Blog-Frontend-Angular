@@ -9,5 +9,6 @@ export const environment = {
     randomBlogAPI: URL + '/blog/random',
     pagedBlogAPI: URL + '/blog/paged',
     tagsAPI: URL + '/tags',
-
+    blogAPI: URL + '/blog',
+    newsletterAPI: URL + '/newsletter',
 };

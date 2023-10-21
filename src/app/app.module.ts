@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MiniBlogComponent } from './mini-blog/mini-blog.component';
 import { BlogGridComponent } from './blog-grid/blog-grid.component';
 import { FooterComponent } from './footer/footer.component';
+import { SubscribeNewsletterComponent } from './subscribe-newsletter/subscribe-newsletter.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FooterComponent } from './footer/footer.component';
     MiniBlogComponent,
     BlogGridComponent,
     FooterComponent,
+    SubscribeNewsletterComponent,
   ],
   imports: [
     HttpClientModule,

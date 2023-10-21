@@ -10,7 +10,7 @@ const routes: Routes = [
   {
     path: 'blog/:id',
     component: BlogComponent,
-  }
+  },
 ];
 
 @NgModule({
