@@ -1,5 +1,7 @@
 # BlogFrontendAngular
 
+This is the frontend of a blog website built according to the Figma template [here](https://www.figma.com/file/mKgFeKSmc10YarS9f0XNZG/A-blog-template-(Community))
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
 
 ## Development server
