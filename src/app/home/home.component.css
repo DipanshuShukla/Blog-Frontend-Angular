@@ -1,3 +1,10 @@
+h1 {
+    margin-top: 72px;
+    font-family: 'New York Extra Large';
+    font-weight: 700;
+    font-size: clamp(28px,4vw,40px);
+}
+
 button {
     width: 50px;
     height: 1.8em;
