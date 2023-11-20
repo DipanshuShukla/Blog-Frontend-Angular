@@ -1,6 +1,6 @@
 import { environment as common } from "./environment.development";
 
-const URL: string = 'https://nordic-rose-service.onrender.com'
+const URL: string = 'https://nordicrosebackend.dipanshushukla.com'
 export const environment = {
     production: true,
     randomBlogAPI: URL + '/blog/random',
