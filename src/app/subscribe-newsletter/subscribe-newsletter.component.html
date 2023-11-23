@@ -22,7 +22,7 @@
 
 </div>
 
-<div *ngIf="response !== undefined && response.email === null" class="box submitted">
+<div *ngIf="response !== undefined && (response.email === null || response.email === undefined)" class="box submitted">
     <div style="height: 15%;"></div>
     <h1>You are already signed up!</h1>
     <p>Thank you for showing your interest.</p>

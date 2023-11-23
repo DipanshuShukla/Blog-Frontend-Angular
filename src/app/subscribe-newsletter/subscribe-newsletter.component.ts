@@ -35,7 +35,12 @@ export class SubscribeNewsletterComponent {
 
     this.apiService.subscribeNewsletter(emailObj).subscribe((data: NewsLetterSubscription) => {
       this.response = data
-      console.log(data)
-    })
+    },
+      (error) => {
+        this.response = new NewsLetterSubscription();
+        console.log(this.response.email)
+        console.error(error);
+      }
+    )
   }
 }
