@@ -38,7 +38,6 @@ export class SubscribeNewsletterComponent {
     },
       (error) => {
         this.response = new NewsLetterSubscription();
-        console.log(this.response.email)
         console.error(error);
       }
     )
