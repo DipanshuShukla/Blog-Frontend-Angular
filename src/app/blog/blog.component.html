@@ -1,5 +1,7 @@
-<div *ngIf="showRedirectionMessage">
-    <p class="error-msg">The blog you requested does not exist. Redirecting you to home in 5 seconds...</p>
+<div style="text-align: center; width: 100%;" *ngIf="showRedirectionMessage">
+    <h1 style="margin-bottom: 0px;">404</h1>
+    <p style="font-size: 2rem; margin-bottom: 0px;">The blog you requested does not exist.</p>
+    <p style="font-size: 1.3rem;">Redirecting you to home in 5 seconds...</p>
 </div>
 <div style="min-height: 50vh;text-align: center;">
     <div *ngIf="blog!==undefined">
