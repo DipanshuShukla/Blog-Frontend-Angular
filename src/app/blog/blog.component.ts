@@ -12,6 +12,7 @@ import { BlogPage } from '../model/blog-page.model';
 export class BlogComponent implements OnInit {
   id?: string | null
   blog!: BlogPage
+  showRedirectionMessage: boolean = false
   authorGender!: string
 
   curPage: Blog[] = [];
@@ -40,7 +41,14 @@ export class BlogComponent implements OnInit {
       this.blog = data
       this.authorGender = this.randomGender()
       this.getPage()
-    })
+    }, (error) => {
+      this.showRedirectionMessage = true;
+      // Redirect to the home page after 5 seconds
+      setTimeout(() => {
+        this.router.navigate(['/']);
+      }, 5000);
+    }
+    )
   }
 
   getPage() {
