@@ -3,7 +3,7 @@
         <div style="text-align: center;">
             <a routerLink="/blog/{{randomBlog.blogid}}">
                 <div class="image-container">
-                    <img class="image" src="assets/loading.gif" alt="">
+                    <img class="image" src="assets/loading.webp" alt="">
                     <img *ngIf="true" style="width: 100%;z-index: 2;"
                         src="https://source.unsplash.com/960x600/?{{randomBlog.title}}" alt="">
                 </div>
@@ -16,7 +16,7 @@
     <div *ngIf="randomBlog === undefined">
 
         <div style="text-align: center; margin-top: 4vh;">
-            <img src="assets/loading.gif" style="width: 52vw;" alt="">
+            <img src="assets/loading.webp" style="width: 52vw;" alt="">
             <h1> </h1>
             <h3> </h3>
         </div>
