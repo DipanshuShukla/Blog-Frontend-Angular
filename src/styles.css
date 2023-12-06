@@ -1,4 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'New York Extra Large';
+    src: url(assets/fonts/NewYorkExtraLargeRegular.otf);
+}
+@font-face {
+    font-family: 'New York Medium';
+    src: url(assets/fonts/NewYorkMediumRegular.otf);
+}
+@font-face {
+    font-family: 'New York Small';
+    src: url(assets/fonts/NewYorkSmallRegular.otf);
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(assets/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url(assets/fonts/SF-Pro-Text-Regular.otf);
+}
+@font-face {
+    font-family: 'SF Mono';
+    src: url(assets/fonts/SFMonoRegular.otf);
+}
 body {
     margin: 0;
     width: 100vw;
