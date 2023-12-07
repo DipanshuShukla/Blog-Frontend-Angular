@@ -1,7 +1,7 @@
-<div style="text-align: center; width: 100%;" *ngIf="showRedirectionMessage">
-    <h1 style="margin-bottom: 0px;">404</h1>
-    <p style="font-size: 2rem; margin-bottom: 0px;">The blog you requested does not exist.</p>
-    <p style="font-size: 1.3rem;">Redirecting you to home in 5 seconds...</p>
+<div id="error-404" *ngIf="showRedirectionMessage">
+    <h1 style="margin-bottom: 14px;">404</h1>
+    <h3 style="padding: 0px; margin: 5px auto;">The blog you requested does not exist.</h3>
+    <h3 style="font-size: clamp(7px,2vw,15px); padding: 0px; margin: 5px auto;">Redirecting you to home in 5 seconds...</h3>
 </div>
 <div style="min-height: 50vh;text-align: center;">
     <div *ngIf="blog!==undefined">
@@ -12,9 +12,10 @@
         </div>
         <img style="width: 100vw;margin-bottom: 2vh;margin-top: 5vh;margin-left: 0;"
             src="https://source.unsplash.com/960x600/?{{blog.title}}" alt="">
-        <hr style="max-width: min(900px, calc(100% - 100px) );border: 1px solid black;">
+        
 
         <div id="author-top">
+            <hr style="width: 100%; margin-bottom: 2vh; border: 1px solid black;">
             <img class="profile-pic" src="https://xsgames.co/randomusers/avatar.php?g={{authorGender}}" alt="">
             <div class="author-info">
                 <div class="author-name">{{blog.author.name}}</div>

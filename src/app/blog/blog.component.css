@@ -1,28 +1,56 @@
-h3 {
-    font-size: 2rem;
-    text-decoration: none;
+#error-404{
+    position: absolute;
+    text-align: center;
+    top: 50vh;
+    left: 50vw;
+    transform: translateX(-50%) translateY(-50%);
+    margin: auto;
+    padding-bottom: 16%;
+    max-width: 100%;
+    width: 100%;
+}
+#error-404 h3{
+    max-width: 100%;
+    width: 100%;
+    
+}
 
+h3 {
+    margin: 15px auto;
+    max-width: 600px;
+    padding: 12px;
+    font-family: 'SF Mono';
+    font-weight: 400;
+    font-size: clamp(14px,2vw,20px);
+    text-decoration: none;
 }
 
 h1 {
-    font-size: 5.5rem;
+    margin: 20px auto;
+    padding: 0 10px;
+    font-family: 'New York Extra Large';
+    font-weight: 700;
+    font-size: clamp(32px,6vw,50px);
+    max-width: 800px;
 }
 
 #author-top {
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
-    margin-top: 3vh;
+    margin-top: 1vh;
     max-width: 900px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 50px;
 }
 
 .article-content {
-    margin: 80px auto;
+    margin: 60px auto;
     padding-left: 25px;
     padding-right: 25px;
     max-width: 900px;
-    font-size: 1.5em;
+    font-family: 'New York Medium';
+    font-size: clamp(16px, 3vw, 20px);
+    font-weight: 400;
     line-height: 1.5em;
     text-align: left;
 }
@@ -35,8 +63,20 @@ figcaption {
     margin: 5px auto;
     width: 60%;
     text-align: center;
-    font-size: 1.1rem;
-    line-height: 1.3rem;
+    font-family: 'SF Pro Text';
+    font-size: clamp(13px,2vw,16px);
+    font-weight: 500;
+    line-height: 1.3;
+}
+@media (max-width:750px){
+    figure{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    figcaption{
+        width: 100%;
+    }
 }
 
 #author-bottom {
@@ -46,6 +86,12 @@ figcaption {
     max-width: 900px;
     padding-left: 50px;
     padding-right: 50px;
+    font-weight: 400;
+}
+
+#author-bottom .author-info{
+    font-family: 'New York Small';
+    font-size: clamp(13px,2vw,16px);
 }
 
 .profile-pic {
@@ -59,15 +105,18 @@ figcaption {
     text-align: left;
     margin-top: auto;
     margin-bottom: auto;
+    font-family: 'SF Pro Text';
+    font-size: clamp(13px,3vw,16px);
 }
 
 .author-name {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
 }
 
 .date-read {
-    font-size: 1.4rem;
+    font-weight: 400;
 }
 
 .socials {
@@ -81,19 +130,8 @@ figcaption {
     margin: auto;
     margin-right: 0;
     width: 100px;
-    height: 66%;
-    border: 2px solid lightgray;
 }
 
-.button-left {
-    border-radius: 10% 0% 0% 10%;
-    border-right: 1px solid lightgray;
-}
-
-.button-right {
-    border-radius: 0 10% 10% 0;
-    border-left: 1px solid lightgray;
-}
 
 .logo {
     display: block;
@@ -104,7 +142,6 @@ figcaption {
 
 .author-about {
     color: rgb(65, 61, 61);
-    font-size: 1.3rem;
 }
 
 .goofy-eye-hr-container {
@@ -133,7 +170,12 @@ figcaption {
     padding-left: 50px;
     padding-right: 50px;
     text-align: left;
-    font-size: 1.4rem;
+    font-family: 'SF Pro Text';
+    font-size: clamp(13px,2vw,16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
 }
 
 .tag {
@@ -159,4 +201,28 @@ figcaption {
     display: flex;
     text-align: center;
     height: min-content;
+}
+
+@media (max-width:550px){
+    #author-top{
+        padding: 0 10px;
+    }
+    #author-bottom{
+        padding: 0 20px;
+    }
+    .author-info{
+        display: block;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .profile-pic{
+        margin-bottom: 40px;
+    }
+    .socials {
+        margin: 0;
+        width: 100%;
+    }
+    .social-button {
+        margin: auto;
+    }
 }
