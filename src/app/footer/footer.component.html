@@ -1,6 +1,6 @@
 <footer>
     <div class="footer">
-        <div style="display: flex; width: 100vw; transform: translateX(-25%);">
+        <div class="tag-band" style="display: flex; width: 100vw; transform: translateX(-25%);">
             <div style="display: flex;" *ngFor="let a of [1,2]">
                 <div style="margin: 10px;" *ngFor="let tag of tags; let i = index"
                     [ngClass]="(i+a)%2 ? 'normal' : 'bold' ">
