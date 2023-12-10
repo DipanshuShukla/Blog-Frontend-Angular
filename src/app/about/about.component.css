@@ -1,0 +1,25 @@
+.about{
+    max-width:950px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 160px;
+}
+h1{
+    font-family: 'New York Extra Large';
+    font-weight: 700;
+    font-size: clamp(32px,6vw,50px);
+    padding-bottom: 10px;
+}
+p{
+    font-family: 'New York Medium';
+    font-size: clamp(16px, 3vw, 20px);
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+@media (max-width:950px){
+    .about{
+        margin: 25px;
+    }
+}
