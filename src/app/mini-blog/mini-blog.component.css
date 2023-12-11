@@ -1,3 +1,22 @@
+h1 {
+    padding: 0 2px;
+    font-family: 'New York Extra Large';
+    font-weight: 700;
+    font-size: clamp(32px,6vw,50px);
+    margin: auto;
+    margin-top: 30px;
+}
+
+h3 {
+    padding: 2px;
+    font-family: 'SF Mono';
+    font-weight: 400;
+    font-size: clamp(14px,2vw,18px);
+    text-decoration: none;
+    margin-top: 20px auto;
+    margin-bottom: 25px;
+}
+
 a {
     color: black;
     text-decoration: none;
