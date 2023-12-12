@@ -11,29 +11,36 @@
     margin: auto;
     margin-bottom: 150px;
     width: 800px;
-    height: 380px;
+    height: 360px;
     text-align: center;
     border: 1px solid #000;
 }
 
 h1 {
-    font-size: 3.2rem;
-    margin-bottom: 10px;
+    font-family: 'New York Extra Large';
+    font-weight: 700;
+    font-size: clamp(31px,5vw,36px);
+    margin-bottom: 20px;
     margin-top: 8%;
 }
 
 p {
     margin: auto;
-    width: 90%;
-    font-size: 1.6rem;
+    margin-top: 4%;
+    width: 86%;
+    text-align: center;
+    font-family: 'SF Pro Text';
+    font-size: clamp(16px, 5vw, 20px);
+    font-weight: 400;
 }
 
 .error-msg {
     margin: auto;
-    margin-top: 10px;
+    margin-top: 8px;
     width: 83%;
     text-align: left;
-    font-size: 1.1rem;
+    font-family: 'SF Mono';
+    font-size: clamp(12px,2vw, 15px);
     font-weight: bold;
     color: red;
 }
@@ -50,7 +57,7 @@ input {
     margin-left: auto;
     width: 60%;
     border: 1px solid #000;
-    font-size: 1.6rem;
+    font-size: clamp(17px,3vw, 20px);
     color: rgb(100, 95, 95);
     padding-left: 20px;
 }
@@ -58,7 +65,7 @@ input {
 .button {
     display: inline-flex;
     margin-right: auto;
-    width: 20%;
+    width: 21%;
     background-color: black;
     cursor: pointer;
 }
@@ -67,7 +74,8 @@ input {
 .button-text {
     margin: auto;
     color: white;
-    font-size: 1.7rem;
+    font-size: clamp(13px,3vw, 20px);
+    font-family: 'SF Pro Text';
 }
 
 @media (max-width: 800px) {
@@ -81,7 +89,7 @@ input {
         margin: auto;
         margin-bottom: 150px;
         width: 100vw;
-        height: 380px;
+        height: 260px;
         text-align: center;
         border: 0px solid #000;
         border-bottom: 1px solid #000;
