@@ -16,9 +16,11 @@
 }
 
 .navmenu-backdrop {
+    position: absolute;
     width: 100vw;
     height: 0px;
     transition: all .5s;
+    background-color: white;
 }
 
 .active-backdrop {
@@ -37,11 +39,13 @@ svg {
     height: 100%;
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
 }
 
 .navmenu-item {
     display: none;
+    font-family: 'New York Extra Large';
+    font-weight: 700;
+    font-size: clamp(25px,4vw,32px);
 }
 
 #burger {
@@ -52,7 +56,7 @@ svg {
     margin-right: 30px;
     margin-left: 100px;
     display: none;
-    font-size: 3em;
+    font-size: clamp(36px,5vw,52px);
     font-weight: normal;
 }
 
@@ -82,7 +86,6 @@ a {
         margin-top: 6vh;
         display: hidden;
         align-items: center;
-        font-size: 2.8rem;
         text-align: right;
     }
 
@@ -91,7 +94,8 @@ a {
     }
 
     .active-backdrop {
-        height: 90vh;
+        top: 10vh;
+        height: 100vh;
     }
 
     .active-navmenu-item {
