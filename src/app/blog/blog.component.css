@@ -88,6 +88,12 @@ figcaption {
     padding-right: 50px;
     font-weight: 400;
 }
+#author-bottom img{
+    height: 52px;
+    width: 52px; 
+    float: left; 
+    margin: 5px; 
+}
 
 #author-bottom .author-info{
     font-family: 'New York Small';
